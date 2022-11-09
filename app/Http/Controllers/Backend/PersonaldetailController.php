@@ -44,6 +44,8 @@ class PersonaldetailController extends Controller
         $personaldetail->description = $request->description;
         $personaldetail->facebook = $request->facebook;
         $personaldetail->youtube = $request->youtube;
+        $personaldetail->email = $request->email;
+        $personaldetail->contact = $request->contact;
         
         if($request->hasFile('photo')){
             $file = $request->photo;
@@ -102,6 +104,8 @@ class PersonaldetailController extends Controller
         $personaldetail->description = $request->description;
         $personaldetail->facebook = $request->facebook;
         $personaldetail->youtube = $request->youtube;
+        $personaldetail->email = $request->email;
+        $personaldetail->contact = $request->contact;
         
         if($request->hasFile('photo')){
             $file = $request->photo;

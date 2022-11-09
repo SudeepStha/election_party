@@ -22,7 +22,9 @@ class PersonaldetailResource extends JsonResource
             'party' => $this->party,
             'description' => $this->description,
             'facebook' => $this->facebook,
-            'youtube' => $this->youtube
+            'youtube' => $this->youtube,
+            'email' => $this->email,
+            'contact' => $this->contact,
         ];
     }
 }

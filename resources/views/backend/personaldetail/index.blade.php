@@ -19,7 +19,9 @@
                                     <th>Image</th>
                                     <th>Name</th>
                                     <th>Party</th>
-                                    <th>Description</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    {{-- <th>Description</th> --}}
                                     <th>Cover Image</th>
                                     <th>Action</th>
                                 </tr>
@@ -33,9 +35,15 @@
                                         {{$personaldetail->party}}
                                     </td>
                                     <td>
+                                        {{$personaldetail->email}}
+                                    </td>
+                                    <td>
+                                        {{$personaldetail->contact}}
+                                    </td>
+                                    {{-- <td>
                                         {!! Str::words($personaldetail->description, 10, '...') !!}
                                         
-                                    </td>
+                                    </td> --}}
                                     
                                     <td><img src="{{asset($personaldetail->cover)}}" alt="N/A" srcset="" width="64px" height="60px"></td>
                                     <td>

@@ -40,6 +40,21 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email (Optional)</label>
+                                        <input class="form-control" id="email"  type="text" name="email" value="{{$personaldetail->email}}">
+                                    </div>
+                                </div><div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contact">Contact (Optional)</label>
+                                        <input class="form-control" id="contact"  type="text" name="contact" value="{{$personaldetail->contact}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="col-md-12">
                             <div class="form-group">
