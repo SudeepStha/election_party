@@ -24,13 +24,13 @@
       <li class="dropdown">
         <a href="/video" class="nav-link"><i data-feather="monitor"></i><span>Videos Form</span></a>
       </li>
-      <li class="dropdown">
+      {{-- <li class="dropdown">
         <a href="#" class="menu-toggle nav-link has-dropdown"><i
             data-feather="briefcase"></i><span>Widgets</span></a>
         <ul class="dropdown-menu">
           <li><a class="nav-link" href="widget-chart.html">Chart Widgets</a></li>
           <li><a class="nav-link" href="widget-data.html">Data Widgets</a></li>
         </ul>
-      </li>
+      </li> --}}
     </ul>
   </aside>

@@ -1114,7 +1114,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="templateshub.net">Templateshub</a></a>
+          <span>Powered By: <a href="https://codeit.com.np/" target="_blank"><b>Code IT</b></a></span>
         </div>
         <div class="footer-right">
         </div>
