@@ -75,7 +75,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary mt-3 float-right">Save</button>
+                        <button type="submit" class="btn btn-primary mt-3 float-right">Update</button>
                     </form>
                 </div>
             </div>
