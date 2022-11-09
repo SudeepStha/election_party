@@ -26,15 +26,19 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="date">Date <span class="text-danger">*</span></label>
-                                <input class="form-control" id="date"  type="date" name="date" value="{{$post->date}}">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="time">Time <span class="text-danger">*</span></label>
-                                <input class="form-control" id="time"  type="time" name="time" value="{{$post->time}}">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="date">Date <span class="text-danger">*</span></label>
+                                        <input class="form-control" id="date"  type="date" name="date" value="{{$post->date}}">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="time">Time <span class="text-danger">*</span></label>
+                                        <input class="form-control" id="time"  type="time" name="time" value="{{$post->time}}">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12">

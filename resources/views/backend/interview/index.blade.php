@@ -19,7 +19,7 @@
                             <tr>
                                 <th>S.N.</th>
                                 <th>Title</th>
-                                <th>Description</th>
+                                {{-- <th>Description</th> --}}
                                 <th>Image</th>
                                 <th>More</th>
                             </tr>
@@ -29,8 +29,10 @@
                             <tr>
                                 <td>{{$interview->id}}</td>
                                 <td>{{$interview->title}}</td>
-                                <td>{!! Str::words($interview->description, 10, '...') !!}</td>
-                                <td><img src="{{asset($interview->featured)}}" alt="N/A" srcset="" width="64px" height="60px"></td>
+                                {{-- <td>{!! Str::words($interview->description, 10, '...') !!}</td> --}}
+                                <td>
+                                    <img src="{{asset($interview->featured)}}" alt="N/A" srcset="" width="64px" height="60px">
+                                </td>
                                 <td>
                                     <div class="d-flex">
                                         <a href="{{ route('interview.edit', $interview->id) }}" class="badge btn bg-primary mx-2">Edit</a>

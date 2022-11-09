@@ -52,13 +52,13 @@ class PersonaldetailController extends Controller
             $new = time() . '.' . $file->getClientOriginalExtension();
             $file->move('personaldetailimage', $new);
             $personaldetail->photo = "personaldetailimage/$new";
-        }
+        };
 
         if($request->hasFile('cover')){
-            $newfile = $request->cover;
-            $neew = time() . '.' . $newfile->getClientOriginalExtension();
-            $newfile->move('personaldetailimage', $neew);
-            $personaldetail->cover = "personaldetailimage/$neew";
+            $file1 = $request->cover;
+            $new1 = time() . '.' . $file1->getClientOriginalExtension();
+            $file1->move('personaldetailcover', $new1);
+            $personaldetail->cover = "personaldetailcover/$new1";
         }
 
         $personaldetail->save();
@@ -112,13 +112,13 @@ class PersonaldetailController extends Controller
             $new = time() . '.' . $file->getClientOriginalExtension();
             $file->move('personaldetailimage', $new);
             $personaldetail->photo = "personaldetailimage/$new";
-        }
+        };
 
         if($request->hasFile('cover')){
-            $newfile = $request->cover;
-            $neew = time() . '.' . $newfile->getClientOriginalExtension();
-            $newfile->move('personaldetailimage', $neew);
-            $personaldetail->cover = "personaldetailimage/$neew";
+            $file1 = $request->cover;
+            $new1 = time() . '.' . $file1->getClientOriginalExtension();
+            $file1->move('personaldetailcover', $new1);
+            $personaldetail->cover = "personaldetailcover/$new1";
         }
 
         $personaldetail->update();

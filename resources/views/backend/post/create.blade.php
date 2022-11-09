@@ -25,15 +25,19 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="date">Date <span class="text-danger">*</span></label>
-                                <input class="form-control" id="date"  type="date" name="date">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="time">Time <span class="text-danger">*</span></label>
-                                <input class="form-control" id="time"  type="time" name="time">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="date">Date <span class="text-danger">*</span></label>
+                                        <input class="form-control" id="date"  type="date" name="date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="time">Time <span class="text-danger">*</span></label>
+                                        <input class="form-control" id="time"  type="time" name="time">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12">
