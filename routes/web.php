@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\InterviewController;
 use App\Http\Controllers\Backend\PersonaldetailController;
+use App\Http\Controllers\Backend\PostController;
 use App\Http\Controllers\Backend\RachanaController;
 use App\Http\Controllers\Backend\VideoController;
 use Illuminate\Support\Facades\Auth;
@@ -28,7 +29,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('personaldetail', PersonaldetailController::class);
-
+Route::resource('post', PostController::class);
 Route::resource('gallery', GalleryController::class);
 Route::resource('interview', InterviewController::class);
 Route::resource('rachana', RachanaController::class);

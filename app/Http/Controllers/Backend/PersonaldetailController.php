@@ -52,6 +52,13 @@ class PersonaldetailController extends Controller
             $personaldetail->photo = "personaldetailimage/$new";
         }
 
+        if($request->hasFile('cover')){
+            $file = $request->cover;
+            $new = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('personaldetailimage', $new);
+            $personaldetail->cover = "personaldetailimage/$new";
+        }
+
         $personaldetail->save();
   
         return redirect()->back();
@@ -101,6 +108,13 @@ class PersonaldetailController extends Controller
             $new = time() . '.' . $file->getClientOriginalExtension();
             $file->move('personaldetailimage', $new);
             $personaldetail->image = "personaldetailimage/$new";
+        }
+
+        if($request->hasFile('cover')){
+            $file = $request->cover;
+            $new = time() . '.' . $file->getClientOriginalExtension();
+            $file->move('personaldetailimage', $new);
+            $personaldetail->cover = "personaldetailimage/$new";
         }
 
         $personaldetail->update();

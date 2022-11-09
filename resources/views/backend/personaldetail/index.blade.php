@@ -8,7 +8,7 @@
                 <div class="card-header justify-content-between">
                     <h3>Personal Details</h3>
                     @if (empty($personaldetail))
-                    <a href="{{route('personaldetail.create')}}" class="btn btn-primary">Insert Detail</a>
+                        <a href="{{route('personaldetail.create')}}" class="btn btn-primary">Insert Detail</a>
                         
                     @endif
                 </div>
@@ -20,6 +20,7 @@
                                     <th>Name</th>
                                     <th>Party</th>
                                     <th>Description</th>
+                                    <th>Cover Image</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -35,7 +36,8 @@
                                         {!! Str::words($personaldetail->description, 10, '...') !!}
                                         
                                     </td>
-                                  
+                                    
+                                    <td><img src="{{asset($personaldetail->cover)}}" alt="N/A" srcset="" width="64px" height="60px"></td>
                                     <td>
                                         <a href="{{route('personaldetail.edit', $personaldetail->id)}}" class="badge btn bg-primary mx-2">
                                             {{-- <i class="fas fa-edit"></i> --}}

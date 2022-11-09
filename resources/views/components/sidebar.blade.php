@@ -13,6 +13,9 @@
         <a href="/personaldetail" class="nav-link"><i data-feather="monitor"></i><span>Personal Details</span></a>
       </li>
       <li class="dropdown">
+        <a href="/post" class="nav-link"><i data-feather="monitor"></i><span>Post</span></a>
+      </li>
+      <li class="dropdown">
         <a href="/gallery" class="nav-link"><i data-feather="monitor"></i><span>Gallery Form</span></a>
       </li>
       <li class="dropdown">

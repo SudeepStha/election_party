@@ -52,6 +52,12 @@
                                 <input class="form-control" id="photo"  type="file" name="photo">
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="cover">Cover Image <span class="text-danger">*</span></label>
+                                <input class="form-control" id="cover"  type="file" name="cover">
+                            </div>
+                        </div>
 
                         <button type="submit" class="btn btn-primary mt-3 float-right">Save</button>
                     </form>
