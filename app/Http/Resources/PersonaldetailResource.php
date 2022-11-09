@@ -23,8 +23,10 @@ class PersonaldetailResource extends JsonResource
             'description' => $this->description,
             'facebook' => $this->facebook,
             'youtube' => $this->youtube,
+            'photo' => asset($this->photo),
             'email' => $this->email,
             'contact' => $this->contact,
+            'cover' => asset($this->cover),
         ];
     }
 }
