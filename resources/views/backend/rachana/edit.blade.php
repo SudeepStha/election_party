@@ -22,7 +22,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="description">Description <span class="text-danger">*</span></label>
-                                <textarea class="form-control" id="editor"  row='7' type="textarea" name="description">{{$rachana->description}}</textarea>
+                                <textarea class="summernote" id="editor"  row='7' type="textarea" name="description">{{$rachana->description}}</textarea>
                             </div>
                         </div>
                         <div class="col-md-12">

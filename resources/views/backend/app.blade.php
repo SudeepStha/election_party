@@ -16,6 +16,13 @@
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="/assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='/assets/img/favicon.ico' />
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="/assets/bundles/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="/assets/bundles/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="/assets/bundles/codemirror/theme/duotone-dark.css">
+  <link rel="stylesheet" href="/assets/bundles/jquery-selectric/selectric.css">
+
 </head>
 
 <body>
@@ -1124,6 +1131,25 @@
   <script src="/assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="/assets/js/custom.js"></script>
+   <!-- JS Libraies -->
+   <script src="/assets/bundles/summernote/summernote-bs4.js"></script>
+   <script src="/assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+   <script src="/assets/bundles/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
+   <script src="/assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+   <!-- Page Specific JS File -->
+   <script src="/assets/js/page/create-post.js"></script>
+   
+    <!-- JS Libraies -->
+  <script src="/assets/bundles/summernote/summernote-bs4.js"></script>
+  <script src="/assets/bundles/codemirror/lib/codemirror.js"></script>
+  <script src="/assets/bundles/codemirror/mode/javascript/javascript.js"></script>
+  <script src="/assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+  <script src="/assets/bundles/ckeditor/ckeditor.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="/assets/js/page/ckeditor.js"></script>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 
 
