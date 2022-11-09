@@ -24,9 +24,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('personaldetail', PersonaldetailApiController::class);
-Route::apiResource('gallery', GalleryApiController::class);
+Route::apiResource('personalinfo', PersonaldetailApiController::class);
+Route::apiResource('galleries', GalleryApiController::class);
 Route::apiResource('posts', PostApiController::class);
-Route::apiResource('interview', InterviewApiController::class);
-Route::apiResource('rachana', RachanaApiController::class);
-Route::apiResource('video', VideoApiController::class);
+Route::apiResource('interviews', InterviewApiController::class);
+Route::apiResource('rachanas', RachanaApiController::class);
+Route::apiResource('videos', VideoApiController::class);
