@@ -19,16 +19,22 @@
                                 <th>S.N.</th>
                                 <th>Name</th>
                                 <th>Phone</th>
+                                <th>Address</th>
+                                <th>Candidate</th>
                                 <th>Message</th>
+                                <th>Post on</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($sujhavs as $sujhav)
+                            @foreach ($sujhavs as $index=>$sujhav)
                             <tr>
+                                <td>{{++$index}}</td>
                                 <td>{{$sujhav->name}}</td>
-                                <td>{{$sujhav->contact}}</td>
+                                <td>{{$sujhav->contact ?? 'N/A'}}</td>
+                                <td>{{$sujhav->address}}</td>
+                                <td>{{$sujhav->candidate}}</td>
                                 <td>{{$sujhav->message}}</td>
-                                <td>{{$sujhav->diffForHumans($created_at)}}</td>
+                                <td>{{$sujhav->created_at->diffForHumans()}}</td>
                             </tr>
                             @endforeach
                         </tbody>

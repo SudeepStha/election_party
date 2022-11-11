@@ -31,6 +31,7 @@ class SujhavApiController extends Controller
         $sujhav = new Sujhav();
         $sujhav->name = $request->name;
         $sujhav->contact = $request->contact;
+        $sujhav->address = $request->address;
         $sujhav->message = $request->message;
 
         $sujhav->save();

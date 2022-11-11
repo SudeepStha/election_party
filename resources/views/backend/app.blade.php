@@ -7,7 +7,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Otika - Admin Dashboard Template</title>
+  <title>Mukshamhang Mukesh</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="/assets/css/app.min.css">
   <!-- Template CSS -->
@@ -174,7 +174,7 @@
                 Settings
               </a> --}}
               <div class="dropdown-divider"></div>
-              <a href="auth-login.html" class="dropdown-item has-icon text-danger"> 
+              <a href="auth-login.html" class="dropdown-item has-icon text-danger">
                 <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
@@ -1138,7 +1138,7 @@
    <script src="/assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
    <!-- Page Specific JS File -->
    <script src="/assets/js/page/create-post.js"></script>
-   
+
     <!-- JS Libraies -->
   <script src="/assets/bundles/summernote/summernote-bs4.js"></script>
   <script src="/assets/bundles/codemirror/lib/codemirror.js"></script>
