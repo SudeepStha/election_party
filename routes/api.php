@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\CarouselApiController;
 use App\Http\Controllers\Api\GalleryApiController;
 use App\Http\Controllers\Api\InterviewApiController;
 use App\Http\Controllers\Api\PersonaldetailApiController;
@@ -32,3 +33,4 @@ Route::apiResource('interviews', InterviewApiController::class);
 Route::apiResource('rachanas', RachanaApiController::class);
 Route::apiResource('videos', VideoApiController::class);
 Route::apiResource('sujhavs', SujhavApiController::class);
+Route::apiResource('carouosels', CarouselApiController::class);

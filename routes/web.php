@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\CarouselController;
 use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\InterviewController;
 use App\Http\Controllers\Backend\PersonaldetailController;
@@ -36,3 +37,4 @@ Route::resource('interview', InterviewController::class);
 Route::resource('rachana', RachanaController::class);
 Route::resource('video', VideoController::class);
 Route::resource('sujhav', SujhavController::class);
+Route::resource('carousel', CarouselController::class);

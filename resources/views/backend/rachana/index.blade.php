@@ -25,9 +25,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($rachana as $rachana)
+                            @foreach ($rachana as $index => $rachana)
                             <tr>
-                                <td>{{$rachana->id}}</td>
+                                <td>{{++$index}}</td>
                                 <td>{{$rachana->title}}</td>
                                 {{-- <td>{!! Str::words($rachana->description, 10, '...') !!}</td> --}}
                                 <td>

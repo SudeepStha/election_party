@@ -25,9 +25,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($interview as $interview)
+                            @foreach ($interview as $index => $interview)
                             <tr>
-                                <td>{{$interview->id}}</td>
+                                <td>{{++$index}}</td>
                                 <td>{{$interview->title}}</td>
                                 {{-- <td>{!! Str::words($interview->description, 10, '...') !!}</td> --}}
                                 <td>

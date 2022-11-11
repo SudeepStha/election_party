@@ -27,9 +27,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($post as $post)
+                            @foreach ($post as $index => $post)
                             <tr>
-                                <td>{{$post->id}}</td>
+                                <td>{{++$index}}</td>
                                 <td>{{$post->title}}</td>
                                 {{-- <td>{{$post->sub_title}}</td> --}}
                                 <td>{!! Str::words($post->sub_title, 5, '...') !!}</td>

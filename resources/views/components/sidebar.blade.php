@@ -13,6 +13,9 @@
         <a href="/personaldetail" class="nav-link"><i data-feather="monitor"></i><span>Personal Details</span></a>
       </li>
       <li class="dropdown">
+        <a href="/carousel" class="nav-link"><i data-feather="monitor"></i><span>Carousel</span></a>
+      </li>
+      <li class="dropdown">
         <a href="/post" class="nav-link"><i data-feather="monitor"></i><span>Post</span></a>
       </li>
       <li class="dropdown">

@@ -25,9 +25,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($gallery as $gallery)
+                            @foreach ($gallery as $index => $gallery)
                             <tr>
-                                <td>{{$gallery->id}}</td>
+                                <td>{{++$index}}</td>
                                 <td>{{$gallery->title}}</td>
                                 <td>{{$gallery->link}}</td>
                                 <td><img src="{{asset($gallery->featured)}}" alt="N/A" srcset="" width="64px" height="60px"></td>

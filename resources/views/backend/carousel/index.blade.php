@@ -10,29 +10,27 @@
                     <div class="alert alert-success">{{session('status')}}</div>
                 @endif --}}
                 <div class="card-header justify-content-between">
-                    <h3>Video Form</h3>
-                    <a href="{{ route('video.create') }}" class="btn btn-primary float-end">Post Video</a>
+                    <h3>Carousel</h3>
+                    <a href="{{ route('carousel.create') }}" class="btn btn-primary float-end">Insert Images</a>
                 </div>
                 <div class="card-body">
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>S.N.</th>
-                                <th>Title</th>
-                                <th>Link</th>
+                                <th>Image</th>
                                 <th>More</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($video as $index => $video)
+                            @foreach ($carousel as $index => $carousel)
                             <tr>
                                 <td>{{++$index}}</td>
-                                <td>{{$video->title}}</td>
-                                <td>{{$video->link}}</td>
+                                <td><img src="{{asset($carousel->image)}}" alt="N/A" srcset="" width="64px" height="60px"></td>
                                 <td>
                                     <div class="d-flex">
-                                        <a href="{{ route('video.edit', $video->id) }}" class="badge btn bg-primary mx-2">Edit</a>
-                                    <form action="{{ route('video.destroy', $video->id) }}" method="post">
+                                        <a href="{{ route('carousel.edit', $carousel->id) }}" class="badge btn bg-primary mx-2">Edit</a>
+                                    <form action="{{ route('carousel.destroy', $carousel->id) }}" method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="badge btn bg-danger">Delete</button>
