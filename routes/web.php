@@ -5,6 +5,7 @@ use App\Http\Controllers\Backend\InterviewController;
 use App\Http\Controllers\Backend\PersonaldetailController;
 use App\Http\Controllers\Backend\PostController;
 use App\Http\Controllers\Backend\RachanaController;
+use App\Http\Controllers\Backend\SujhavController;
 use App\Http\Controllers\Backend\VideoController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -24,7 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -34,3 +35,4 @@ Route::resource('gallery', GalleryController::class);
 Route::resource('interview', InterviewController::class);
 Route::resource('rachana', RachanaController::class);
 Route::resource('video', VideoController::class);
+Route::resource('sujhav', SujhavController::class);

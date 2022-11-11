@@ -27,6 +27,9 @@
       <li class="dropdown">
         <a href="/video" class="nav-link"><i data-feather="monitor"></i><span>Videos Form</span></a>
       </li>
+      <li class="dropdown">
+        <a href="/sujhav" class="nav-link"><i data-feather="monitor"></i><span>Sujhav</span></a>
+      </li>
       {{-- <li class="dropdown">
         <a href="#" class="menu-toggle nav-link has-dropdown"><i
             data-feather="briefcase"></i><span>Widgets</span></a>
